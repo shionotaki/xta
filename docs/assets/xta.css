@@ -1,0 +1,355 @@
+@charset "UTF-8";
+@import "normalize.css";
+@import url(//fonts.googleapis.com/css?family=Dosis);
+@import "font-awesome.min.css";
+
+/* base */
+body {
+  background: #9ea3b7;
+  color: #433;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+img, video {
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  border: none;
+}
+a {
+  border-bottom: none;
+  padding-bottom: 0.2em;
+  color: #ff0000;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: 2px solid #ff0000;
+  text-decoration: none;
+}
+
+
+/* helper */
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+.hidden {
+  display: none;
+}
+
+
+/* reset */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: normal;
+}
+p {
+  margin: 0;
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+dl, dd {
+  margin: 0;
+}
+small {
+  font-size: 100%;
+}
+em {
+  font-style: normal;
+}
+
+
+.cover,
+.information,
+.soundcloud,
+.track,
+.download,
+.footnote {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 2%;
+  color: #fff;
+  font-size: 160%;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.cover {
+  margin-top: 15%;
+}
+
+.information {
+  margin-top: 15%;
+}
+.information .title {
+  color: #fff;
+  font-size: 300%;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+.information .title .logo {
+  height: 30vh;
+}
+@media (max-width: 48rem) {
+  .information .title .logo {
+    height: 10vh;
+  }
+}
+.information .title .logo .logo-image {
+  fill: #fff;
+}
+.information .featuring {
+  margin-top: 5%;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  font-size: 160%;
+  letter-spacing: 0.1em;
+}
+.information .featuring:before {
+  content: "M3 2017 SPRING";
+  display: block;
+  margin: 0 2% 0 0;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+}
+.information .produced {
+  margin-top: 5%;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+}
+.information .produced:before {
+  content: "Produced by";
+  display: block;
+  margin: 0 0 3%;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+}
+
+.soundcloud {
+  width: 100%;
+  margin: 10% 0 0;
+}
+
+.track {
+  margin-top: 10%;
+}
+.track .heading {
+}
+.track .verse1,
+.track .verse2,
+.track .hook {
+  margin-top: 7%;
+  line-height:2.2;
+  text-align: left;
+  font-family: 'Dosis', Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 150%;
+  letter-spacing: 0.25em;
+}
+.track .name {
+  font-size: 70%;
+  font-family: 'Dosis', sans-serif;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+.track .verse1 {
+}
+.track .verse1.koitama {
+}
+.track .verse1.koitama .name {
+  color: #00ab6d;
+}
+.track .verse2.kaionthemic {
+}
+.track .verse2.kaionthemic .name {
+  color: #fff;
+}
+.track .hook {
+}
+.track .hook.carios {
+}
+.track .hook.carios .name {
+  color: #01278e;
+}
+
+
+.download {
+  width: 100%;
+  height: 166px;
+  margin: 20% 0 0;
+}
+.download .trigger {
+  display: block;
+  width: 100%;
+  height: 166px;
+  line-height: 166px;
+  background: #fff;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  color: #e0dcde;
+  font-family: 'Dosis', sans-serif;
+  font-size: 200%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.download .trigger:hover {
+  background: #e0dcde;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+  color: #fff;
+}
+
+
+.footnote {
+  margin-top: 10%;
+}
+
+.credit {
+  margin-top: 10%;
+}
+.credit .heading {
+  margin-top: 2%;
+}
+.credit .creditList {
+  margin-top: 10%;
+  line-height: 1.7;
+  text-align: right;
+  font-family: 'Dosis', Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 130%;
+  letter-spacing: 0.1em;
+}
+.credit .creditList .title {
+  margin-top: 2%;
+  color: #fff;
+  font-style: italic;
+}
+.credit .creditList .caption {
+  display: block;
+  font-size: 70%;
+}
+.credit .creditList .fa-twitter {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.7);
+}
+
+
+.specialThanks {
+  margin-top: 20%;
+}
+.specialThanks .heading {
+  margin-top: 2%;
+}
+.specialThanks .place,
+.specialThanks .twitter {
+  margin-top: 10%;
+  line-height: 3;
+  text-align: right;
+  font-family: 'Dosis', Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 130%;
+  letter-spacing: 0.1em;
+}
+
+
+.social {
+  margin-top: 40%;
+}
+.social .buttonList {
+}
+.social .buttonList .button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 5%;
+  font-size: 120%;
+}
+.social .buttonList .button:last-child {
+  margin-right: 0; 
+}
+
+
+.hosted {
+  margin-top: 2%;
+  margin-bottom: 20%;
+}
+.hosted .by {
+  display: inline-block;;
+  border-top: 1px solid #433;
+  padding: 2%;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+
+@media screen and (max-width:640px) {
+  .cover {
+    margin-top: 0;
+    width: 100%;
+  }
+  .specialThanks {
+    margin-top: 20%;
+  }
+  .title {
+    font-size: 150%;
+  }
+  .heading,
+  .information .featuring,
+  .download .trigger {
+    font-size: 120%;
+  }
+  .produced {
+    font-size: 70%;
+  }
+  .soundcloud {
+    margin-top: 20%;
+  }
+
+.track {
+    width: 80%;
+  }
+
+.track .verse1,
+
+.track .verse2,
+
+.track .hook {
+    font-size: 70%;
+    letter-spacing: 0.15em;
+  }
+  .download .trigger {
+    height: 100px;
+    line-height: 100px;
+  }
+  .specialThanks {
+    margin-top: 30%;
+  }
+  .credit .creditList,
+  .specialThanks .place,
+  .specialThanks .twitter,
+  .social .buttonList .button,
+  .hosted .by {
+    font-size: 60%;
+    letter-spacing: 0.05em;
+  }
+}
